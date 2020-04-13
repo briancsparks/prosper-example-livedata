@@ -12,10 +12,7 @@ import androidx.navigation.fragment.NavHostFragment;
 public class SecondFragment extends Fragment {
 
   @Override
-  public View onCreateView(
-      LayoutInflater inflater, ViewGroup container,
-      Bundle savedInstanceState
-  ) {
+  public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     // Inflate the layout for this fragment
     return inflater.inflate(R.layout.fragment_second, container, false);
   }
@@ -23,6 +20,7 @@ public class SecondFragment extends Fragment {
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
+    // Clicking the button navigates back
     view.findViewById(R.id.button_second).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
